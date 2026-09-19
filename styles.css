@@ -283,3 +283,13 @@ h1 .gold { background: linear-gradient(90deg, #f0cf86, #d4a757 60%, #b98a2e); -w
 .e2e-card p { color: var(--muted); margin: 0; font-size: .93rem; }
 .section-alt + .section-alt { border-top: none; }
 @media (max-width: 960px) { .e2e { grid-template-columns: 1fr; } }
+
+/* Three points */
+.points { max-width: var(--max); margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px) clamp(40px, 6vw, 72px); display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.point { background: linear-gradient(160deg, #142038, #0f1a2c); border: 1px solid var(--border); border-radius: 16px; padding: 26px 24px; transition: transform .2s, border-color .2s; }
+.point:hover { transform: translateY(-4px); border-color: rgba(212,167,87,.7); }
+.point-icon { font-size: 2rem; display: block; margin-bottom: 12px; }
+.point h3 { font-size: 1.25rem; margin-bottom: 8px; }
+.point p { color: var(--muted); margin: 0; font-size: .97rem; }
+.points-note { grid-column: 1 / -1; text-align: center; color: var(--text); font-weight: 600; font-size: 1.05rem; margin: 10px 0 0; padding: 16px; border: 1px dashed rgba(212,167,87,.5); border-radius: 12px; }
+@media (max-width: 960px) { .points { grid-template-columns: 1fr; } }
