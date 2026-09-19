@@ -271,3 +271,15 @@ h1 .gold { background: linear-gradient(90deg, #f0cf86, #d4a757 60%, #b98a2e); -w
 .feature-art { aspect-ratio: 16 / 10; display: grid; place-items: center; grid-auto-flow: column; gap: 18px; font-size: 3.2rem; background: radial-gradient(circle at 30% 30%, rgba(212,167,87,.25), transparent 55%), radial-gradient(circle at 75% 70%, rgba(64,110,220,.3), transparent 55%), var(--bg); border-bottom: 1px solid var(--border); position: relative; }
 .feature-art .arrow { color: var(--gold); font-size: 2rem; }
 .feature-art em { position: absolute; bottom: 14px; font-style: normal; font-size: .8rem; font-weight: 700; color: var(--text); background: rgba(11,19,32,.8); border: 1px solid var(--border); border-radius: 999px; padding: 6px 12px; }
+
+.e2e { display: grid; grid-template-columns: 1.05fr .95fr; gap: 44px; align-items: center; }
+.e2e .lead { font-size: 1.1rem; }
+.e2e .ticks li strong { color: var(--text); }
+.e2e-cards { display: grid; gap: 14px; }
+.e2e-card { background: linear-gradient(160deg, #142038, #0f1a2c); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: start; transition: transform .2s, border-color .2s; }
+.e2e-card:hover { transform: translateY(-3px); border-color: rgba(212,167,87,.6); }
+.e2e-icon { font-size: 1.6rem; grid-row: span 2; margin-top: 2px; }
+.e2e-card h4 { margin: 0 0 4px; }
+.e2e-card p { color: var(--muted); margin: 0; font-size: .93rem; }
+.section-alt + .section-alt { border-top: none; }
+@media (max-width: 960px) { .e2e { grid-template-columns: 1fr; } }
